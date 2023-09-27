@@ -4,10 +4,10 @@ import java.util.Scanner;
 import java.io.File;
 import java.io.FileNotFoundException;
 
-public class TestDriver {
-    public static void main(String[] args) throws Exception {
+public class Driver {
+    public static void main(String[] args) {
         try {
-            File file = new File("../src/database.txt");
+            File file = new File("src/database.txt");
             Scanner sc = new Scanner(file);
             while (sc.hasNextLine()) {
                 String line = sc.nextLine();
