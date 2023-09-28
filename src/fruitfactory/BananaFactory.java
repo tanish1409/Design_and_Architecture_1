@@ -17,8 +17,9 @@ public class BananaFactory implements GroceryProductFactory {
                 String line = sc.nextLine();
                 String[] split = line.split(" ");
                 String product = split[0];
-                if (product == productName)
+                if (Objects.equals(product, productName))
                     price = split[1];
+                    
             }
             sc.close();
         } catch (FileNotFoundException e) {
