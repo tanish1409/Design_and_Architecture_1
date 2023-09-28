@@ -1,2 +1,2 @@
-Apples 3.49
-Bananas 1.99
+Apple 3.49
+Banana 1.99
