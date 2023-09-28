@@ -5,10 +5,9 @@ We have an abstract factory which extends which has two factories Apple and Bana
 DIRECTORY STRUCTURE
 
 Directory src/fruitfactory/: Contains Source Java Files (Fruitfactory package)  
-
-FruitFactory Package: Contains all interfaces and relevant factory classes
-
+Directory src: has the database.txt (contains the price and name data)
 Directory test: contains the driver class (test package)
+FruitFactory Package: Contains all interfaces and relevant factory classes
 
 FILE RESPONSIBILITIES
 
