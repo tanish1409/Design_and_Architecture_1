@@ -1,22 +1,20 @@
 package test;
 
-import java.util.Scanner;
-import java.io.File;
-import java.io.FileNotFoundException;
+import fruitfactory.AppleFactory;
+import fruitfactory.BananaFactory;
+import fruitfactory.GroceryProduct;
+import fruitfactory.GroceryProductFactory;
 
 public class Driver {
     public static void main(String[] args) {
-        try {
-            File file = new File("src/database.txt");
-            Scanner sc = new Scanner(file);
-            while (sc.hasNextLine()) {
-                String line = sc.nextLine();
-                System.out.println(line);
-            }
-            sc.close();
-        } catch (FileNotFoundException e) {
-            System.out.println("File not found.");
-            e.printStackTrace();
-        }
+
+        GroceryProductFactory Applefactory = new AppleFactory();
+        GroceryProductFactory Bananafactory = new BananaFactory();
+
+        GroceryProduct appleproduct = Applefactory.makeProduct();
+        GroceryProduct bananaproduct = Bananafactory.makeProduct();
+
+        System.out.println("The price of the apple is " + appleproduct.getPrice());
+        System.out.println("The price of the banana is " + bananaproduct.getPrice());
     }
 }
