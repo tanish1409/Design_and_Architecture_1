@@ -1,5 +1,7 @@
 # Design_and_Architecture_Assignment_1
 
+We have an abstract factory which extends which has two factories Apple and Banana. They have an interface called Grocery Product which extends two components, Apple and Banana. The AppleFactory and BananaFactory have reading implementations from the text file and get the price to update the setPrice Function and change for the Apple and Banana component.
+
 DIRECTORY STRUCTURE
 
 Directory src/fruitfactory/: Contains Source Java Files (Fruitfactory package)  
